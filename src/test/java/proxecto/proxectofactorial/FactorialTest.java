@@ -21,26 +21,25 @@ public class FactorialTest {
      * Test of factorial method, of class Factorial.
      */
     @Test
-    public void testFactorial() {
-        System.out.println("factorial");
+    public void testFactorial1() {
+        System.out.println("factorial1");
         int num = 0;
-        int expResult = 0;
-        int result = Factorial.factorial(num);
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        int resultadoEsperado = 0;
+        int resultado = Factorial.factorial(num);
+        assertEquals(resultadoEsperado, resultado);
     }
 
-    /**
-     * Test of main method, of class Factorial.
-     */
     @Test
-    public void testMain() {
-        System.out.println("main");
-        String[] args = null;
-        Factorial.main(args);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+    public void testFactorial2(){
+        System.out.println("factorial2");
+        int num=5;
+        int resultadoEsperado=120;
+        int resultado=Factorial.factorial(num);
+        assertEquals(resultadoEsperado,resultado);
     }
     
+    @Test
+    public void testFactorial3(){
+        System.out.println("factorial3");
+    }
 }
