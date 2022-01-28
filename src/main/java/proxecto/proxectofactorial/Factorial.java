@@ -30,5 +30,6 @@ public class Factorial {
         System.out.println("Introduce un número para calcular o factorial");
         long nl=in.nextLong();
         System.out.println("O factorial de "+n+" é "+factorial(nl));
+        System.out.println("Fin da proba");
     }
 }
