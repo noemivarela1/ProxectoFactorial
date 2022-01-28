@@ -31,5 +31,6 @@ public class Factorial {
         long nl=in.nextLong();
         System.out.println("O factorial de "+n+" é "+factorial(nl));
         System.out.println("Fin da proba");
+        System.out.println("Mensaxe de proba");
     }
 }
