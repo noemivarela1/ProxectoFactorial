@@ -46,4 +46,13 @@ public class FactorialTest {
         int resultado=Factorial.factorial(num);
         assertEquals(resultadoEsperado,resultado);
     }
+    
+    @Test
+    public void testFactorial4(){
+        System.out.println("factorial 4");
+        long num=20;
+        long resultadoEsperado=2432902008176640000L;
+        long resultado=Factorial.factorial(num);
+        assertEquals(resultadoEsperado,resultado);
+    }
 }
