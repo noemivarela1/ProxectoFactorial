@@ -2,6 +2,7 @@ package proxecto.proxectofactorial;
 /**
  * Calcula o factorial de n
  */
+import java.math.BigInteger;
 import java.util.Scanner;
 public class Factorial {
     public static int factorial(int num){
@@ -13,12 +14,12 @@ public class Factorial {
         }
         return factorial;
     }
-    public static long factorial(long num){
-        long factorial=1;
+    public static BigInteger factorialB(long num){
+        BigInteger factorial=new BigInteger("1");
         
         //n!=1*2*3*...*n
         for (int i=1;i<=num;i++){
-            factorial*=i;
+            factorial.multiply(BigInteger.valueOf(i));
         }
         return factorial;
     }
@@ -29,7 +30,7 @@ public class Factorial {
         System.out.println("O factorial de "+n+" é "+factorial(n));
         System.out.println("Introduce un número para calcular o factorial");
         long nl=in.nextLong();
-        System.out.println("O factorial de "+n+" é "+factorial(nl));
+        System.out.println("O factorial de "+n+" é "+factorialB(nl));
         System.out.println("Fin da proba");
         System.out.println("Mensaxe de proba");
     }
