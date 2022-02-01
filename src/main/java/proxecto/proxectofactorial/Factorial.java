@@ -33,5 +33,6 @@ public class Factorial {
         System.out.println("O factorial de "+n+" é "+factorialB(nl));
         System.out.println("Fin da proba");
         System.out.println("Mensaxe de proba");
+        System.out.println("Cambio feito no repositorio remoto");
     }
 }
